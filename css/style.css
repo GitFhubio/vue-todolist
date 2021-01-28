@@ -1,0 +1,80 @@
+/* General style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+.flex{
+  display:flex;
+}
+
+.br15{
+  border-radius: 15px;
+}
+
+#app {
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+img{
+  width:50%;
+}
+
+.form {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    width:60%;
+}
+
+input {
+  width:70%;
+  height:60px;
+    padding: 10px 15px;
+    margin-right: 2%;
+}
+
+button {
+   width:20%;
+   height:60px;
+   color:#2c2c2c;
+}
+
+
+/* Todo list */
+.lista{
+background-color: #f5f7f7;
+width:55%;
+padding:30px 25px;
+}
+
+li {
+  justify-content: space-between;
+  align-items: center;
+    border-bottom: 1px solid #d9dee1;
+    padding: 10px 5px;
+}
+
+li h3::first-letter {
+    text-transform: uppercase;
+}
+span{
+  font-size:25px;
+  opacity:0;
+}
+li:hover span{
+  opacity:1;
+  cursor:pointer;
+}

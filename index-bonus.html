@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue-todolist</title>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- Fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- Vuejs -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- Main style -->
+    <link rel="stylesheet" href="./css/style-bonus.css">
+</head>
+<body>
+<div id="app">
+ <input type="text" id="myinput" v-model="newTodo" @keyup.13="addText">
+ <button type="button" @click="addText" name="button">ADD</button>
+<ul>
+<li v-for="(todo,index) in todo_list"
+><h3>{{todo}}</h3>  <span @click=remove2(index)>x</span></li>
+</ul>
+</div>
+
+    <!-- Script -->
+    <script src="./js/main-bonus.js"></script>
+</body>
+</html>

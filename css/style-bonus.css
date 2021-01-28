@@ -1,0 +1,86 @@
+/* General style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#app {
+    min-height: 100vh;
+    background-image: url(../img/knuckles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border-radius: 10px;
+    width: 900px;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #6B7FD7;
+    font-family: 'Lobster', cursive;
+    font-size: 55px;
+    text-align: center;
+}
+
+.form {
+    text-align: center;
+}
+
+li h3::first-letter {
+    text-transform: uppercase;
+}
+
+input {
+    width: 30%;
+    padding: 8px 5px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 2px solid;
+    border-color: #6B7FD7;
+}
+
+button {
+    padding: 8px;
+}
+
+
+/* Todo list */
+ul {
+  margin-left: 10px;
+    list-style: none;
+    background-color: #fff;
+    opacity:0.8;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #50514F;
+    padding: 10px 5px;
+}
+
+span{
+  padding-left: 20px;
+  font-size:25px;
+  opacity:0;
+}
+li:hover span{
+  opacity:1;
+  cursor:pointer;
+}
